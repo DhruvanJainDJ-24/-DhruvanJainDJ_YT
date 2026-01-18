@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<title>Dhruvan Jain's First Website</title>  
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>  
+    :root{  
+      --bg:#0f0f14;  
+      --card:#161622;  
+      --accent:#ff6fa5;  
+      --text:#f7f7fb;  
+      --muted:#b8b8c7;  
+    }  
+    *{box-sizing:border-box}  
+    body{  
+      margin:0; font-family:Poppins, sans-serif; 
+      background:radial-gradient(1200px 600px at 10% -10%, #2b1b2f, transparent), 
+                 radial-gradient(800px 400px at 90% 10%, #1b2b2f, transparent), var(--bg); 
+      color:var(--text);  
+      line-height: 1.6;
+    }  
+    header{padding:60px 16px 20px; text-align:center}  
+    .title{font-family:'Playfair Display', serif; font-size:48px; letter-spacing:1px; margin:0; color: var(--accent);}  
+    .subtitle{margin-top:10px; color:var(--muted); font-size:18px}
+
+    .container{max-width:1100px; margin:0 auto; padding:40px 16px}  
+    
+    /* Song Grid Styling */
+    .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px}  
+    .card{
+      background: var(--card); 
+      border:1px solid rgba(255,255,255,.1); 
+      border-radius:20px; 
+      overflow:hidden; 
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }  
+    .card:hover{ transform: translateY(-10px); border-color: var(--accent); }
+    .card img{width:100%; height:180px; object-fit:cover; display:block}  
+    .card .content{padding:20px}  
+    .card h3{margin:0 0 10px 0; font-size:18px; height: 50px; overflow: hidden;}
+    
+    .cta{
+      display:inline-block; width:100%; text-align:center; padding:12px; 
+      border-radius:12px; background:linear-gradient(135deg, #ff6fa5, #ff9ac5); 
+      color:#1a0f16; font-weight:600; text-decoration:none; transition: 0.2s;
+    }  
+    .cta:hover{box-shadow:0 0 20px rgba(255,111,165,0.4)}  
+
+    .yt-btn-main{  
+      display:inline-block; padding:15px 30px; background:#ff0000; color:white; 
+      text-decoration:none; font-size:18px; border-radius:50px; font-weight:bold; 
+      margin:20px 0; transition: 0.3s;
+    }  
+    .yt-btn-main:hover{ background:#cc0000; transform: scale(1.05); }
+    
+    footer{padding:50px 16px; text-align:center; color:var(--muted); border-top: 1px solid rgba(255,255,255,0.1)}  
+</style>  
+</head>  
+<body>
+
+<header>
+    <h1 class="title">Dhruvan Jain</h1>
+    <p class="subtitle">Welcome to my world of music</p>
+    <a href="https://www.youtube.com/@DhruvanJainDJ" target="_blank" class="yt-btn-main">  
+      Subscribe on YouTube  
+    </a>
+</header>
+
+<div class="container">
+    <h2 style="text-align: center; margin-bottom: 40px; font-size: 32px;">My Latest Songs</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://img.youtube.com/vi/g-ayfMpOuyw/mqdefault.jpg" alt="Kaafiilaa">
+            <div class="content">
+                <h3>Dhruvan | KAAFIILAA</h3>
+                <a href="https://youtu.be/g-ayfMpOuyw" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.youtube.com/vi/57l8p2De4YQ/mqdefault.jpg" alt="Billaa Saandaa">
+            <div class="content">
+                <h3>Billaa-Saandaa Gang</h3>
+                <a href="https://youtu.be/57l8p2De4YQ" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.youtube.com/vi/YoIybOub_Vg/mqdefault.jpg" alt="Tu Hi To Sahara">
+            <div class="content">
+                <h3>Tu Hi To Sahara</h3>
+                <a href="https://youtu.be/YoIybOub_Vg" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.youtube.com/vi/6zR4zF1nRsg/mqdefault.jpg" alt="Theek Ho Jayega">
+            <div class="content">
+                <h3>Theek Ho Jayeega Sab</h3>
+                <a href="https://youtu.be/6zR4zF1nRsg" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.youtube.com/vi/V2ZW4viCw48/mqdefault.jpg" alt="Horror Song">
+            <div class="content">
+                <h3>Pitche Mude To Maarre</h3>
+                <a href="https://youtu.be/V2ZW4viCw48" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.youtube.com/vi/hSczw-3PCqg/mqdefault.jpg" alt="Tere Sath Har Pal">
+            <div class="content">
+                <h3>Tere Sath Har Pal</h3>
+                <a href="https://youtu.be/hSczw-3PCqg" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.youtube.com/vi/KmF0VcRzIuI/mqdefault.jpg" alt="Mera Bharat">
+            <div class="content">
+                <h3>Mera Bharat: Untold Story</h3>
+                <a href="https://youtu.be/KmF0VcRzIuI" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.youtube.com/vi/lQDb2aYWjXI/mqdefault.jpg" alt="Tu Hi To Tha">
+            <div class="content">
+                <h3>Tu Hi To Tha</h3>
+                <a href="https://youtu.be/lQDb2aYWjXI" target="_blank" class="cta">Listen Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p><strong>No Copyright Issue • @DhruvanJainDJ Presents</strong></p>
+    <p>Created with ❤️ by <strong>Dhruvan Jain</strong></p>
+    <p style="font-size: 14px;">© 2026 DhruvanJainDJ Music & Artist</p>
+</footer>
+
+</body>  
+</html>
